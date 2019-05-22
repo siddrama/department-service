@@ -12,3 +12,8 @@ logging:
 microservices:
   employee:
     url: http://${EMPLOYEE_SERVICE}:8080
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_SERVER}:8080/eureka/     
