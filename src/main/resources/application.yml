@@ -11,7 +11,7 @@ logging:
 
 microservices:
   employee:
-    url: http://${EMPLOYEE_SERVICE}:8080
+    url: http://${EUREKA_SERVER}:8080
     
 eureka:
   client:
