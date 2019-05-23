@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import pl.piomin.services.department.model.Employee;
 
-@FeignClient(name = "EMPLOYEE", url = "${microservices.employee.url}")
+@FeignClient("employee")
 public interface EmployeeClient {
 
 	@GetMapping("/employee/department/{departmentId}")
