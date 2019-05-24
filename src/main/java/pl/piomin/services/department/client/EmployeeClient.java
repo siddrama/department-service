@@ -11,7 +11,7 @@ import pl.piomin.services.department.model.Employee;
 @FeignClient(name="employee")
 public interface EmployeeClient {
 	
-	@GetMapping("/department/{departmentId}")
+	@GetMapping("/employee/department/{departmentId}")
 	List<Employee> findByDepartment(@PathVariable("departmentId") String departmentId);
 	
 }
