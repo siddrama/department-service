@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import pl.piomin.services.department.model.Employee;
 
-@FeignClient("employee")
+@FeignClient(name="employee")
 public interface EmployeeClient {
-
-	@GetMapping("/employee/department/{departmentId}")
+	
+	@GetMapping("/department/{departmentId}")
 	List<Employee> findByDepartment(@PathVariable("departmentId") String departmentId);
 	
 }

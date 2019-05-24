@@ -1,10 +1,7 @@
 spring:
   application:
     name: department
-  data:
-    mongodb:
-      uri: mongodb://${MONGO_DATABASE_USER}:${MONGO_DATABASE_PASSWORD}@mongodb/${MONGO_DATABASE_NAME}
-      
+        
       
 logging:
   pattern: 
@@ -12,9 +9,12 @@ logging:
 
 microservices:
   employee:
-    url: http://${EUREKA_SERVER}:8080
+    url: http://${EUREKA_SERVER}:8080 
+
     
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://${EUREKA_SERVER}:8080/eureka/     
+      defaultZone: http://${EUREKA_SERVER}:8080/eureka/  
+  instance:
+    preferIpAddress: true     
