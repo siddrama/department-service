@@ -1,7 +1,7 @@
 spring:
   application:
     name: department
-   data:
+  data:
     mongodb:
       uri: mongodb://${MONGO_DATABASE_USER}:${MONGO_DATABASE_PASSWORD}@mongodb/${MONGO_DATABASE_NAME}
         
